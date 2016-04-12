@@ -28,10 +28,9 @@ public class MainActivity extends AppCompatActivity {
                     PendingIntent pIntent = PendingIntent.getActivity(MainActivity.this, 0, intent, 0);
                     Notification noti =  new Notification.Builder(MainActivity.this)
                             .setTicker("TickerTitle")
-                            .setContentTitle("Content Text cadu")
-                            .setSmallIcon(R.drawable.ic_launcher)
-                            .addAction(R.drawable.ic_launcher, "Action 1", pIntent)
-                            .addAction(R.drawable.ic_launcher, "Action 2", pIntent)
+                            .setContentTitle("Organiza Enem")
+                            .setSmallIcon(R.mipmap.ic_launcher)
+                            .addAction(R.mipmap.ic_launcher, "Está na hora de estudar", pIntent)
                             .setContentIntent(pIntent).getNotification();
 
                     noti.flags = Notification.FLAG_AUTO_CANCEL;
